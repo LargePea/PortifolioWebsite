@@ -1,0 +1,152 @@
+.left-aligned-paragraph{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    z-index: 2;
+    padding: 5% 5% 2%;
+    width: 45vw;
+}
+
+.left-aligned-image{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    margin: 0 2vw 20% 0;
+}
+
+.right-aligned-paragraph{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    z-index: 2;
+    padding: 5% 5% 2%;
+    width: 45vw;
+    text-align: right;
+    float: right;
+}
+
+.right-aligned-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    margin: 0 0 20% 2vw;
+}
+
+#intro-paragraph-bg{
+    z-index: 0;
+    margin: 15% 0 5%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+}
+
+#headshot{
+    background-image: url(../Images/Myself/headshot.PNG);
+}
+
+#featured-1-paragraph-bg{
+    z-index: 0;
+    margin: 15% 0 5%;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-radius: 10px;
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+}
+
+#featured-game-1-splash{
+    background-image: url(../Images/Tiempo/TiempoFeatured.png);
+}
+
+#featured-2-paragraph-bg{
+    z-index: 0;
+    margin: 15% 0 5%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+}
+
+#featured-game-2-splash{
+    background-image: url(../Images/OnARoll/OnARollFeatured.png);
+}
+
+#featured-3-paragraph-bg{
+    z-index: 0;
+    margin: 15% 0 5%;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-radius: 10px;
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+}
+
+#featured-game-3-splash{
+    background-image: url(../Images/SaveRainCity/SaveRainCityFeatured.png);
+}
+
+.content-box-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 3vh 0 2vh;
+    height: 25%;
+}
+
+.content-button{
+    padding: 2% 5%;
+    border: none;
+    font-size: 4vw;
+    border-radius: 50px;
+    color: rgb(222, 222, 222);
+    background-color: rgb(169, 76, 42);
+    border: .25vw solid rgb(134, 38, 26);
+}
+
+.content-button:hover{
+    background-color: rgb(193, 122, 68);
+    border: .25vw solid rgb(158, 81, 42);
+}
+
+#find-more{
+    margin: auto;
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+@media(min-aspect-ratio: 13/16){
+    .left-aligned-paragraph{
+        width: 30vw;
+    }
+
+    .right-aligned-paragraph{
+        width: 30vw;
+    }
+
+    .content-button{
+        font-size: 1.25vw;
+    }
+
+    p{
+        margin-bottom: 1vw;
+    }
+    
+    h4{
+        margin-bottom: 1vw;
+    }
+}

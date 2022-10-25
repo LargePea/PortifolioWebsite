@@ -1,0 +1,151 @@
+form{
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+    border-radius: 10px;
+    padding: 2vw;
+    margin: 2vh 0;
+}
+
+label{
+    font-size: 2vw;
+}
+
+input{
+    background-color: rgb(66, 66, 66);
+    color: rgb(222, 222, 222);
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 2.5vw;
+    padding: 2px 1vw;
+    margin-top: 0.5vh;
+}
+
+textarea{
+    background-color: rgb(66, 66, 66);
+    color: rgb(222, 222, 222);
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 2.5vw;
+    padding: 2px 1vw;
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+}
+
+textarea:hover{
+    background-color: rgb(84, 84, 84);
+}
+
+textarea:focus{
+    background-color: rgb(84, 84, 84);
+    outline: 0px;
+}
+
+input:hover{
+    background-color: rgb(84, 84, 84);
+}
+
+input:focus{
+    background-color: rgb(84, 84, 84);
+    outline: 0px;
+}
+
+#message{
+    width: 50vw;
+    height: 15vh;
+}
+
+#name{
+    width: 35vw;
+}
+
+#email{
+    width: 45vw;
+}
+
+button{
+    padding: 2% 5%;
+    border: none;
+    font-size: 3vw;
+    border-radius: 50px;
+    color: rgb(222, 222, 222);
+    background-color: rgb(146, 82, 63);
+    border: .25vw solid rgb(111, 46, 36);
+}
+
+#send:hover{
+    border: .25vw solid rgb(129, 69, 49);
+    background-color: rgb(164, 95, 75);
+}
+
+.resume{
+    display: inline;
+    float: right;
+}
+
+#pdfImage{
+    width: auto;
+    height: 15vw;
+}
+
+#headshotImage{
+    width: 30vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+.links{
+    float: right;
+    width: 25vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.link{
+    margin-top: 4vw;
+    height: auto;
+    width: 13vw;
+}
+
+@media(min-aspect-ratio: 13/16){
+    input{
+        font-size: 1.25vw;
+    }
+
+    label{
+        font-size: 1.25vw;
+    }
+
+    textarea{
+        font-size: 1.25vw;
+    }
+
+    #message{
+        width: 35vw;
+        height:25vh
+    }
+
+    #name{
+        width: 20vw;
+    }
+
+    #email{
+        width: 25vw;
+    }
+
+    button{
+        font-size: 1.25vw;
+    }
+
+    #pdfImage{
+        height: 10vw;
+    }
+
+    .link{
+        width: 5vw;
+        margin-top: 1.5vw;
+    }
+}

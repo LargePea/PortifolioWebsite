@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Li - On A Roll</title>
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/BasicTemplate.css">
+    <link rel="stylesheet" href="../CSS/projectTemplate.css">
+
+    <!--Favicon-->
+    <link rel="icon" id="favicon" href="">
+    <script>
+        let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+        document.getElementById("favicon").href = mediaQueryObj.matches ? "../Images/Myself/RalphLogo_White.svg" : "../Images/Myself/RalphLogo_Black.svg" 
+    </script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgb(73, 138, 135);"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/Myself/RalphLogo_White.svg" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav me-auto mb-lg-0 navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item selected">
+                        <a class="nav-link main-link active" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <br>
+        <h1>On A Roll</h1>
+        <div class="divider"></div>
+        <br>
+        <div class="intro">
+            <img src="../Images/OnARoll/SisyphusSplash.png" alt="media" class="media">
+            <div class="text-align-right">
+                <h4>Role:</h4>
+                <p>Gameplay, UI, & audio Programmer</p>
+                <h4>Language:</h4>
+                <p>C#</p>
+                <h4>Engine:</h4>
+                <p>Unity 2021.1.24f1</p>
+                <h4>Duration:</h4>
+                <p>2 months</p>
+                <a href="https://largepea.itch.io/on-a-roll" target="_blank">
+                    <button class="download">Download</button>
+                </a>
+            </div>
+            <div>
+                <h4>My Responsibilities</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>Boulder Mechanics</p></li>
+                    <li><p>Player Movement</p></li>
+                    <li><p>Lightning Strike</p></li>
+                    <li><p>Obstacles</p></li>
+                    <li><p>UI coding</p></li>
+                    <li><p>Audio coding</p></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>Unity3D</p></li>
+                    <li><p>SourceTree</p></li>
+                    <li><p>Visual Studio</p></li>
+                    <li><p>Git</p></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h4>Game Overview</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            On A Roll is a 3D side-scrolling platformer where you play as the Greek legend Sisyphus. 
+            You must defy the curse of the gods by rolling a massive boulder to the top of a mountain while avoiding obstacles.
+        </p>
+        <br>
+        <h4>Experience Summary</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            On A Roll is a term project I worked on during my time at VFS. I worked as the programmer along side a level designer, artist, project manager, and UI designer.
+            I held a strong point of communication with the project manager, so we could funnel all our completed tasks through him and be able to work efficiently.
+        </p>
+        <p>
+            This project has taught me the importance of constant and consistent communication during the development life-cycle, so everyone knows what's been done or has to be done.
+            I've also learned some pipelines and best practices when it comes to implementing art and animation into the game and integrating code with it.
+            This project has proven to be quite hard to code as this is my first game engine project as well as this being a physics driven game, requiring a lot of math.
+        </p>
+        <p>
+            I was a part of this project from pre-production all the way until final/release.
+        </p>
+        <br>
+        <h4>Boulder Mechanics</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/OnARoll/BoulderDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            The boulder mechanics consited of three actions, push, throw, and catch.
+            All of these mechanics were physics driven, so I had to take the initiative and learn some kinematic and projectile physics equations in order for the boulder to feel realistic and like you're actually throwing it.
+            While developing this system I ran into many, many issues with Unity and it's collision detection system and had to learn how to use it properly.
+            This being my first time dealing with physics and collisions, I had to write and rewrite my scripts multiple times until I finally learned how to do it properly.
+            However through this I learned that was an extremely inefficient way of learning the system and instead I should've broken it down into smaller segments, then once I understood the system I can combine them together.
+        </p>
+        <br>
+        <h4>Player Movement</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/OnARoll/AutoRunDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            Player movement was already included in the base project, however we had a very unique movement system where Sisyphus auto runs.
+            I had to learn how to create a unique movement script, so I looked over and studied the existing movement script and took out what code was useful to me and added my own to create the auto run.
+        </p>
+        <video class="media float-left" autoplay muted loop controls>
+            <source src="../Images/OnARoll/JumpingDemo.mp4" type="video/mp4">
+        </video>
+        <p class="right">
+            Our player movement also has another unique aspect where you have a variable jump height depending on how long you hold the jump button.
+            The way I solved this problem was for Sisyphus to always jump for the maximum height, however once the jump button is let go the gravity is increased, thus slowing the player down quicker and falling faster.
+        </p>
+        <br>
+        <h4 class="left">Lightning Strike</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/OnARoll/LightningDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            The lightning strike went through many design iterations as each time it didn't feel the way we wanted to, so to keep up with the pace of changes was quite the challenge.
+            We went from striking at random intervals, to striking after a trigger but can strike anywhere on the screen, to finally striking in a close radius around the player.
+            With so many changes being made I knew rewriting the whole system everytime would be extremely inefficient, so I modularized my scripts so we can swap small scripts in place of other ones without having to rewrite everything.
+            Then once we finally felt that it felt good I then simplified the scripts into one which made it was easier to debug, rather than searching through ten different small scripts.
+        </p>
+        <br>
+        <h4>Obstacles</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/OnARoll/HealthDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            We wanted to add some small obstacles that the player had to jump over in order to not die, as well as incentivise jumping and throwing the boulder more.
+            So, I added a simple Spike Trap system where if the player collided with it you'd die. However, it didn't feel quite fair and we decided to add a health system.
+        </p>
+        <p>
+            The health system we added was quite simple as the player only has two points of health which healed over time. When Sisyphus collides with the spike he now gets delt one damage instead.
+            There a simple check to see if the player has max health or not and if not, it begins to increment the time elapsed until it is higher or equal to the required regeneration time.
+        </p>
+        <br>
+        <h4 class="left">UI</h4>
+        <div class="divider shorten"></div> <br>
+        <img src="../Images/OnARoll/ProgressBar.png" alt="media" class="media float-right">
+        <p>
+            The UI was very simple to implement as we didn't have many custom elements, as well as Unity has a fantasic system built-in for UI navigation.
+            The two custom made UI elements were the Progress Meter and well as the Strength Bar.
+            The Progress Bar simply takes the player's traveled distance and compares it with the total distance to determine the fill.
+        </p>
+        <img src="../Images/OnARoll/StrengthBarDemo.png" alt="media" class="media float-left">
+        <p class="right">
+            The Strength Bar is slightly more complicated as there is an inital bar that goes down revealing the chaser, then the chaser bar follows to show that you've used up that strength.
+            The inital bar is directly taken from how much strength you want to use when you hold down the throw button over time. 
+            Then the chaser quickly follows after the button is released through a lerp. 
+        </p>
+        <h4 class="left">Audio</h4>
+        <div class="divider shorten"></div> <br>
+        <img src="../Images/OnARoll/AudioDemo.png" alt="media" class="media float-right">
+        <p>
+            I used the built-in Unity audio system for this game, making the implementation of audio extremely simple. 
+            All I had to do was add the script and the sound I wanted then sometimes trigger the audio to play through one line of code.
+            I also created scriptable objects from the mixer settings so you could adjust volume of individual mixer sliders.
+        </p>
+        <br>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <ul class="footer-links">
+            <li class="footer-link-item">
+                <a href="../projects/Projects.html">Projects</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html"> About Me</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html#contact-me">Contact Me</a>
+            </li>
+        </ul>
+        <p>Ralph Li 2022©</p>
+    </footer>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script type="module" src="../JavaScript/server.js"></script>
+</body>
+</html>

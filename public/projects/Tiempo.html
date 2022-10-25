@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Li - Tiempo</title>
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/BasicTemplate.css">
+    <link rel="stylesheet" href="../CSS/projectTemplate.css">
+
+    <!--Favicon-->
+    <link rel="icon" id="favicon" href="">
+    <script>
+        let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+        document.getElementById("favicon").href = mediaQueryObj.matches ? "../Images/Myself/RalphLogo_White.svg" : "../Images/Myself/RalphLogo_Black.svg" 
+    </script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgb(73, 138, 135);"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/Myself/RalphLogo_White.svg" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav me-auto mb-lg-0 navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item selected">
+                        <a class="nav-link main-link active" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <br>
+        <h1>Tiempo</h1>
+        <div class="divider"></div>
+        <div class="intro">
+            <iframe src="https://www.youtube.com/embed/yB1XMm4d1_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+            <div class="text-align-right">
+                <h4>Role:</h4>
+                <p>Gameplay & UI Programmer</p>
+                <h4>Language:</h4>
+                <p>C#</p>
+                <h4>Engine:</h4>
+                <p>Unity 2021.2.17f1</p>
+                <h4>Duration:</h4>
+                <p>4 months</p>
+                <a href="https://community.vfs.com/arcade/game/tiempo/" target="_blank">
+                    <button class="download">Download</button>
+                </a>
+            </div>
+            <div>
+                <h4>My Responsibilities</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>Time Rewind ability</p></li>
+                    <li><p>Obstacles coding</p></li>
+                    <li><p>AI coding</p></li>
+                    <li><p>UI coding</p></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>Unity3D</p></li>
+                    <li><p>SourceTree</p></li>
+                    <li><p>Visual Studio</p></li>
+                    <li><p>Git</p></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h4>Game Overview</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            Tiempo is a 3D, single player, third-person platformer where you must make your way up a clock tower to stop your rival inventor from pausing time infinitely across the world. 
+            While platforming up the tower, you will encounter enemies and roadblocks such as moving platforms and pressure plates which need to be activated using your time pausing and rewinding mechanics in order to proceed.
+        </p>
+        <br>
+        <h4>Experience Summary</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            Tiempo is a final project I worked on at my time at VFS. 
+            I worked as one of the programmers along side a level designer, project manager, two artists, and another programmer.
+            I kept a strong communication with all the team members so would could release a cohesive and polished product.
+        </p>
+        <p>
+            This project also taught me a lot about best practices when it comes to working with another programmer and how to integrate without stepping on anyone's toes.
+            Coding this game was an extremly daunting task as our main mechanics all had to deal with time manipulation and I've never done something like that before.
+        </p>
+        <p>
+            I was a part of this project from pre-production all the way till final/release.
+        </p>
+        <br>
+        <h4>Time Rewind Ability</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/Tiempo/RewindDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            The Rewind ability was a challenge as I had to figure out a way to create a system to save the object's history while not destroying performance.
+            I had to go through multiple iterations of the rewinding system, initally starting off with a timeline system where we could change the objects timeline and through some math it can determine what position it should be in.
+            However, I soon realized that I did not have the time to develop such a complex system and changed course to store timer data, but this caused many bugs and platforms began desyncing.
+        </p>
+        <p>
+            Soon I realized that since the size of our game was quite small it may not have much of an impact to memory to just store a bunch of position values and some inital state values.
+            After some math I realized that it would be fine and that is the final design that we ended up having.
+        </p>
+        <br>
+        <h4>Obstacles</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/Tiempo/PressurePlateDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            I was put in charge of coding the Pressure Plate and a way to unlock and lock objects using the Pressure Plate(s). 
+            Since every moving obstacle in the game needed to be lockable I needed to make this mechanic as modular and easy to implement to save production time.
+            To do this, I created a manager script which would communicate with the required Pressure Plates then tell the object to either stay lock or become unlocked.
+            The only additional code the object script would require was an <b>ILockable</b> interface which had one boolean the manager script would toggle.
+        </p>
+        <video class="media float-left" autoplay muted loop controls>
+            <source src="../Images/Tiempo/WeightsDemo.mp4" type="video/mp4">
+        </video>
+        <p class="right">
+            I was also responsible for coding the Moving Weights. 
+            This was quite simple to do as it was just a linearly moving object that would stop for a determined amount of time then move again in the opposite direction.
+            I used a simple lerp from point A to point B then had a timer that would count up until it would exceed the required wait time.
+            Then it would just move from point B to point A. This simple script allowed my fellow coding teammate, Ava Cheng, to easily implement her Time Pause ability.
+        </p>
+        <br>
+        <h4 class="left">AI</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/Tiempo/ToroBotDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            I was tasked to coding the ToroBot, an enemy where it is meant to somewhat replicate a Spanish bullfight.
+            As the secondary AI programmer I had to build off of my teammate's, Ava Cheng's, AI code base. 
+            Through inheritance I was able to build off of her basic enemy movement and attack code and develop the ToroBot's own unique movement and attack.
+            I developed three unique states for the ToroBot's attack to make it feel like Spanish bullfighting, a Charge-up State, Charging State, and Stunned State. 
+        </p>
+        <p>
+            Through playtesting we found that players weren't getting enough feed back for when the ToroBot is changing from the Charge-up State to the Charging State.
+            So, I changed the system to allow the ToroBot to stop aiming at the player, create a new noise, make his eyes glow, and for it to blow out steam just before charging.
+            Players found these new features to give enough feedback to comfortably bait the ToroBot and complete the puzzles.
+        </p>
+        <br>
+        <h4>UI</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/Tiempo/UIDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            Being the sole coder for the UI of this project I wanted to be ambitious and give it that wow factor that you wouldn't see in any other final projects in my grade. 
+            So, I got together with the UI artist, Max Sakamoto, and we planned for a 3D UI where the camera would fly around the world when you select different things and all the menus would be in 3D.
+            However, Unity's system only supported for 2D UI, but there were some built-in base classes that I was able to inherit and  hijack for my own use.
+            Through using some of Unity's built-in UI functionality and my own custom scripts I was able to create and finish the UI within one week. One week faster than our alloted two weeks to complete.
+        </p>
+        <br>
+
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <ul class="footer-links">
+            <li class="footer-link-item">
+                <a href="../projects/Projects.html">Projects</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html"> About Me</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html#contact-me">Contact Me</a>
+            </li>
+        </ul>
+        <p>Ralph Li 2022©</p>
+    </footer>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script type="module" src="../JavaScript/server.js"></script>
+</body>
+</html>

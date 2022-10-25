@@ -1,0 +1,81 @@
+.media{
+    width: 35vw;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.youtube{
+    width: 35vw;
+    height: 19.6875vw;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vw;
+    padding-left: 0;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.float-right{
+    float: right;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    display: inline;
+}
+
+.float-left{
+    float: left;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    display: inline;
+}
+
+.left{
+    clear: left;
+}
+
+.right{
+    clear: right;
+}
+
+.download{
+    background-color: rgb(146, 82, 63);
+    border: 2px solid rgb(111, 46, 36);
+    color: rgb(222, 222, 222);
+    padding: 2% 5%;
+    font-size: 2.5vw;
+    border-radius: 50px;
+}
+
+.download:hover{
+    border: 2px solid rgb(129, 69, 49);
+    background-color: rgb(164, 95, 75);
+}
+
+@media (max-aspect-ratio: 13/16){
+    p{
+        margin-bottom: 2vw;
+        font-size: 3vw;
+    }
+
+    .download{
+        font-size: 4vw;
+    }
+
+    .media{
+        width: 55vw;
+    }
+
+    .youtube{
+        width: 55vw;
+        height: 30.9375vw;
+    }
+}

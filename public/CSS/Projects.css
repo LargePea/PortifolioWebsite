@@ -1,0 +1,78 @@
+#professional{
+    display: none;
+}
+
+.tab-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: rgb(73, 138, 135);
+    border: 0.25vw solid rgb(52, 108, 105);
+    padding: 3.5vw 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 1vw;
+    border-radius: 25px;
+}
+
+.splash-image{
+    width: 30vw;
+    height: auto;
+}
+
+.tabs{
+    padding: 2vh 0;
+}
+
+.tab-links{
+    font-size: 1.5vw;
+    margin-right: 0;
+    padding: .5vw 1vw;
+    border: none;
+    background-color: rgb(66, 66, 66);
+    color: rgb(222, 222, 222);
+    border-bottom: 2px transparent;
+}
+
+.tab-links:hover{
+    background-color: rgb(84, 84, 84);
+    animation: hoverFadeIn .5s;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.current-tab{
+    background-color: rgb(84, 84, 84);
+    border-bottom: 2px solid rgb(222, 222, 222);
+    animation: none !important;
+}
+
+@keyframes hoverFadeIn {
+    from{background-color: rgba(84, 84, 84, 0);}
+    to{background-color: rgba(84, 84, 84, 1);}
+}
+
+@media (max-aspect-ratio: 13/16){
+    .tab-content{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 2.5vw;
+        padding-bottom: .5vw;
+    }
+
+    .splash-image{
+        width: 65vw;
+        height: auto;
+    }
+
+    .tab-links{
+        font-size: 3.5vw;
+        padding: .5vw 3vw;
+    }
+
+    .title{
+        margin-bottom: 2.5vw;
+    }
+}

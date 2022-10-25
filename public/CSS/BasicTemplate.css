@@ -1,0 +1,128 @@
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(83, 83, 83);
+    color: rgb(222, 222, 222);
+    contain: content;
+    overflow: hidden;
+}
+
+
+body::before{
+  content: "";
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  top: -250%;
+  left: -250%;
+  z-index: -1;
+  transform: rotate(45deg);
+  background-image: url(../Images/Myself/TileingTexture.png);
+  background-size: 150px;
+  background-repeat: repeat;
+}
+
+html{
+    height: 100%;
+    color: rgb(222, 222, 222);
+}
+
+p{
+    font-size: 2.5vw;
+}
+
+h1{
+    font-size: 5vw;
+}
+
+h4{
+    font-size: 3.25vw;
+}
+
+.content{
+    padding: 0 5vw;
+    background-color: rgb(66, 66, 66);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    margin-top: auto;
+    background-color: grey;
+    padding: 1vh 5vw 1vh 5vw;
+    text-align: right;
+    font-size: 2vw;
+    contain: content;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(73, 138, 135);
+}
+
+.footer-links{
+    display: inline;
+    float: left;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-link-item{
+    display: inline;
+    margin-right: 3vw;
+}
+
+footer > p{
+    display: inline;
+}
+
+.divider{
+    height: 0;
+    width: 50vw;
+    border-bottom: .25vw solid rgb(52, 108, 105);
+}
+
+.right-float{
+    float: right;
+}   
+
+.right-align{
+    text-align: right;
+}
+
+.shorten{
+    width: 20vw;
+}
+
+@media(min-aspect-ratio: 13/16){
+    .content{
+        margin: 2vh 10vw;
+        border-radius: 15px;
+    }
+
+    p{
+        font-size: 1.25vw;
+    }
+
+    h1{
+        font-size: 3vw;
+    }
+
+    h4{
+        font-size: 2vw;
+    }
+
+    footer{
+        font-size: 1vw;
+    }
+
+    .divider{
+        width: 30vw;
+    }
+
+    .shorten{
+        width: 20vw
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found</title>
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="./CSS/Header.css">
+    <link rel="stylesheet" href="./CSS/LandingPage.css">
+    <link rel="stylesheet" href="./CSS/BasicTemplate.css">
+    <style>
+      .error-text{
+        padding-top: 40vh;
+        padding-bottom: 40vh;
+        align-content: center;
+        text-align: center;
+      }
+    </style>
+
+    <!--Favicon-->
+    <link rel="icon" id="favicon" href="">
+    <script>
+        let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+        document.getElementById("favicon").href = mediaQueryObj.matches ? "./Images/Myself/RalphLogo_White.svg" : "./Images/Myself/RalphLogo_Black.svg" 
+    </script>
+</head>
+  <body>
+     <!--Nav Bar-->
+     <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgb(73, 138, 135);"> 
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="./Images/Myself/RalphLogo_White.svg" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav me-auto mb-lg-0 navbar-right">
+                  <li class="nav-item">
+                      <a class="nav-link main-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link main-link active" href="./projects/Projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link main-link active" href="AboutMe.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link main-link active" href="AboutMe.html#contact-me">Contact Me</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="content">
+    <div class="error-text">
+      <h1>ERROR 404</h1>
+      <p>Your requested page was not found.</p>
+      <p>Please enter a valid address.</p>
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer>
+      <ul class="footer-links">
+          <li class="footer-link-item">
+              <a href="./projects/Projects.html">Projects</a>
+          </li>
+          <li class="footer-link-item">
+              <a href="./AboutMe.html"> About Me</a>
+          </li>
+          <li class="footer-link-item">
+              <a href="./AboutMe.html#contact-me">Contact Me</a>
+          </li>
+      </ul>
+      <p>Ralph Li 2022©</p>
+  </footer>
+
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script type="module" src="./JavaScript/server.js"></script>
+</body>
+</html>

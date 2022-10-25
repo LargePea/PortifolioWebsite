@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Li - Save RainCity</title>
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/BasicTemplate.css">
+    <link rel="stylesheet" href="../CSS/projectTemplate.css">
+
+    <!--Favicon-->
+    <link rel="icon" id="favicon" href="">
+    <script>
+        let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+        document.getElementById("favicon").href = mediaQueryObj.matches ? "../Images/Myself/RalphLogo_White.svg" : "../Images/Myself/RalphLogo_Black.svg" 
+    </script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgb(73, 138, 135);"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/Myself/RalphLogo_White.svg" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav me-auto mb-lg-0 navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item selected">
+                        <a class="nav-link main-link active" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link active" href="../AboutMe.html#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <br>
+        <h1>Save RainCity</h1>
+        <div class="divider"></div>
+        <br>
+        <div class="intro">
+            <iframe src="https://www.youtube.com/embed/CRHJKh3s4iQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+            <div class="text-align-right">
+                <h4>Role:</h4>
+                <p>Database, website, & gameplay Programmer</p>
+                <h4>Language:</h4>
+                <p>HTML, CSS, JavaScript</p>
+                <h4>Duration:</h4>
+                <p>1 month</p>
+                <a href="https://saveraincity.web.app/" target="_blank">
+                    <button class="download">Play Now</button>
+                </a>
+            </div>
+            <div>
+                <h4>My Responsibilities</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>LeaderBoards</p></li>
+                    <li><p>Character Customization</p></li>
+                    <li><p>About Us Page</p></li>
+                    <li><p>Score Saving</p></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <div class="divider shorten"></div> <br>
+                <ul>
+                    <li><p>FireBase</p></li>
+                    <li><p>FireStore</p></li>
+                    <li><p>Git</p></li>
+                    <li><p>Visual Studio Code</p></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h4>Project Overview</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            Save RainCity is a website created to help spread the word of the CEAP (Climate Emergency Action Plan).
+            You play as the Mayor of RainCity and make difficult descisions between saving the environment and pleasing your people.
+            Will you save RainCity or will you get kicked out and the world ends due to pollution?
+        </p>
+        <br>
+        <h4>Experience Summary</h4>
+        <div class="divider shorten"></div> <br>
+        <p>
+            Save RainCity was a Spring project I had to do while in the CST, Computer Systems Technology, program at BCIT. 
+            I worked along side four other programmers to build and host this website.
+            This project taught me how to work in an AGILE workflow environment.
+            I had daily meetings with the team, weekly meetings with the client and had to keep a strong communication between both in order to deliver a product up to the client's standard.
+        </p>
+        <p>
+            I also learned many technical skills from this project, such as reading/writing to a database and hosting a website.
+            This was the first team based programming project I ever did, so being able to keep up with the communication and integrating code with other people was a challenge.
+            Through these challenges I've learned how to be better at keeping up with team members as well as how to write modular code so integration would be simple and a lot less buggy.
+        </p>
+        <p>
+            I was part of this project throughout the entire development cycle until release.
+        </p>
+        <br>
+
+        <h4>LeaderBoards</h4>
+        <div class="divider shorten"></div> <br>
+        <img src="../Images/SaveRainCity/LeaderboardDemo.png" alt="rewind-ability" class="media float-right">
+        <p>
+            Being tasked to creating the leaderboard I had to find a way to dynamically add elements with info retrieved from the database.
+            I acomplished this by finding the "scores" table in our FireStore database and retriving the collections from it.
+            Since the database was unsorted to I used a quick sort to sort the items and took the first ten elements to dynamically populate the page.
+        </p>
+        <br>
+
+        <h4 class="right">Character Customization</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/SaveRainCity/CharacterChangeDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            To create the character customization was quite simple as I only had to create arrays that contained the links to the image asset and have an index counter that would increase/decrease when you pressed a button.
+            However, I quickly found out there was a major problem with the CSS and that each asset would not line up properly like they were supposed to. 
+            At first I tried to create a system that read the size of the asset and adjust the CSS accordingly, however that didn't work really well.
+            So, I had to create a quick meeting with our artist and asked him to create all the assets the same size.
+            After the meeting, the recreated assets all lined up properly with minimal work required of both mine and our artist's end.
+        </p>
+        <br>
+
+        <h4>About Us</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/SaveRainCity/AboutUsDemo.mp4" type="video/mp4">
+        </video>
+        <p>
+            Each one of our members in our team was tasked with an html page to write and since I was tasked with the About Us page I really wanted to make it stand out.
+            So, I took the initiave to learn some more complex CSS with animations and 3D transforms and it made our about us page and each of our faces much more memorable.
+        </p>
+        <video class="media float-left" autoplay muted loop controls>
+            <source src="../Images/SaveRainCity/RotationDemo.mp4" type="video/mp4">
+        </video>
+        <p class="right">
+            With this new found CSS knowledge I was also able to apply it to another part of the project as well, the end screen.
+        </p>
+        <br>
+
+        <h4 class="left">Score Saving</h4>
+        <div class="divider shorten"></div> <br>
+        <video class="media float-right" autoplay muted loop controls>
+            <source src="../Images/SaveRainCity/SaveScore.mp4" type="video/mp4">
+        </video>
+        <p>
+            In order to acomplish score saving in our game I had to figure out a way to write to our database.
+            This was accomplished by my knowledge of finding the "scores" table then writing a new collection to it.
+            However, just simply doing this would cause an issue with our leaderboards because you could save without having a name to it.
+            So to fix this issue, I created a check to make sure the user was already logged in to our website, if not the it would request them to log in before saving the score.
+        </p>
+        <br>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <ul class="footer-links">
+            <li class="footer-link-item">
+                <a href="../projects/Projects.html">Projects</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html"> About Me</a>
+            </li>
+            <li class="footer-link-item">
+                <a href="../AboutMe.html#contact-me">Contact Me</a>
+            </li>
+        </ul>
+        <p>Ralph Li 2022©</p>
+    </footer>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script type="module" src="../JavaScript/server.js"></script>
+</body>
+</html>
